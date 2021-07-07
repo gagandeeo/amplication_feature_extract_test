@@ -38,6 +38,17 @@ class UserUpdateInput {
 
   @ApiProperty({
     required: false,
+    type: String,
+  })
+  @IsString()
+  @IsOptional()
+  @Field(() => String, {
+    nullable: true,
+  })
+  phoneNumber?: string;
+
+  @ApiProperty({
+    required: false,
     type: [String],
   })
   @IsString({
