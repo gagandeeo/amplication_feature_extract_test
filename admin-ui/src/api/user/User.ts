@@ -3,7 +3,6 @@ export type User = {
   firstName: string | null;
   id: string;
   lastName: string | null;
-  phoneNumber: string;
   roles: Array<string>;
   updatedAt: Date;
   username: string;
