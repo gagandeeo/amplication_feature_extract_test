@@ -59,15 +59,6 @@ class UserOrderByInput {
   @Field(() => SortOrder, {
     nullable: true,
   })
-  phoneNumber?: SortOrder;
-
-  @ApiProperty({
-    required: false,
-    enum: ["Asc", "Desc"],
-  })
-  @Field(() => SortOrder, {
-    nullable: true,
-  })
   roles?: SortOrder;
 
   @ApiProperty({
