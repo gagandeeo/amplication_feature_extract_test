@@ -48,17 +48,6 @@ class UserWhereInput {
   @Field(() => StringFilter, {
     nullable: true,
   })
-  phoneNumber?: StringFilter;
-
-  @ApiProperty({
-    required: false,
-    type: StringFilter,
-  })
-  @Type(() => StringFilter)
-  @IsOptional()
-  @Field(() => StringFilter, {
-    nullable: true,
-  })
   username?: StringFilter;
 }
 export { UserWhereInput };
